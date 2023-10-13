@@ -28,7 +28,7 @@ services:
 
   backend:
     build:
-      context: ../mdhh_backend
+      context: ../mdhh_ht_backend
       dockerfile: Dockerfile
     ports:
       - 80:80
