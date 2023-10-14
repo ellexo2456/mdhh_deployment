@@ -9,7 +9,8 @@ create table "User"
         unique,
     "Password"   varchar(255) not null,
     is_confirmed boolean default false,
-    accesstoken  varchar(255) not null
+    accesstoken  varchar(255) not null,
+    legalEntity boolean default false
 );
 
 alter table "User"
