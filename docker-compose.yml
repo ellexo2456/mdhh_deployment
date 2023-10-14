@@ -29,14 +29,15 @@ services:
   rabbitmq:
     image: rabbitmq:3.10.7-management
     ports:
-      - "15672:15672"
+      - 15672:15672
+      - 5672:5672
 
   backend:
     build:
       context: ../mdhh_ht_backend
       dockerfile: Dockerfile
     ports:
-      - "80:80"
+      - 80:80
     networks:
       local_area:
     restart: unless-stopped
